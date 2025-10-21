@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+main {
+  font-family: 'Montserrat';
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  font-family: 'Montserrat';
+  margin-top: 32px;
+  width: max-content;
+  display: flex;
+  gap: 8px;
+}
+
+form>label {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+form input {
+  outline: none;
+  width: 272px;
+  height: 40px;
+  padding: 0 16px;
+
+  border: 1px solid gray;
+  border-radius: 4px;
+}
+
+form input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #808080;
+}
+
+form button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 91px;
+  height: 40px;
+
+  background: #4e75ff;
+  color: #fff;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.loading {
+  margin-top: 32px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+/**------------ gallery --------------*/
+.gallery {
+  font-family: 'Montserrat';
+  height: fit-content;
+  margin: 32px 156px;
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.gallery-item {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border: 1px solid #808080;
+}
+
+.gallery-item:hover .info-title,
+.gallery-item:hover .info-value {
+  font-weight: bold;
+}
+
+.gallery-item:focus-within .info-title,
+.gallery-item:focus-within .info-value {
+  font-weight: bold;
+}
+
+.gallery a {
+  display: block;
+  width: 100%;
+  padding: 0;
+}
+
+.gallery-image {
+  display: block;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.info-container {
+  padding: 4px 20px;
+  display: flex;
+  justify-content: space-around;
+  gap: 27px;
+  height: 50px;
+}
+
+.info-box {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: max-content;
+}
+
+.info-title {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33333;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.info-value {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+/* фон модалки */
+
+/* ПІДКЛАДКА поверх сторінки (димка) */
+.sl-overlay {
+  background-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+/* Фон самої модалки (область навколо зображення) */
+.sl-wrapper {
+  background-color: rgba(90, 89, 101, 0.9) !important;
+}
+
+/* лічильник */
+.sl-wrapper .sl-counter {
+  color: #fff !important;
+}
+
+/* стрілки «prev/next» та кнопка закриття */
+.sl-wrapper .sl-navigation button,
+.sl-wrapper .sl-close {
+  color: #fff !important;
+}
+
+/* підпис фото у слайдері */
+.sl-wrapper .sl-caption {
+  font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', Roboto,
+    sans-serif !important;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/* iziToast */
+.iziToast .iziToast-texts {
+  margin-left: 0 !important;
+}
+
+/* фіксуємо ширину всіх тостів */
+.iziToast {
+  width: 370px !important;
+  max-width: none !important;
+  /* щоб не обмежувалося maxWidth */
+}
+
+/* центр для topCenter (не обов’язково) */
+.iziToast-wrapper {
+  width: 100% !important;
+  /* інколи потрібно для точного центрування */
+}
+
+/* на всяк випадок — вирівнюємо сам текст */
+.iziToast .iziToast-message {
+  text-align: left !important;
+}
+
+.iziToast .iziToast-icon {
+  filter: brightness(0) invert(1);
+  /* стане білою */
+}
+
+.iziToast,
+.iziToast .iziToast-message,
+.iziToast .iziToast-title {
+  font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', Roboto,
+    sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  /* якщо треба жирніше */
+}

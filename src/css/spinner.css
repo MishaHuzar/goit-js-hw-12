@@ -1,0 +1,43 @@
+:root {
+  --sp-size: 36px;
+  --sp-thickness: 4px;
+  --sp-color: #4f6cf0;
+}
+
+#searchBtn {
+  margin-top: 32px;
+  background: transparent;
+}
+
+#searchBtn[hidden] {
+  display: none;
+}
+
+.loader {
+  display: inline-block;
+  /* ВАЖЛИВО: щоб працювали width/height */
+  width: var(--sp-size);
+  height: var(--sp-size);
+  vertical-align: middle;
+  /* вирівнювання з текстом */
+  border: var(--sp-thickness) solid transparent;
+  border-top-color: var(--sp-color);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+.loader[hidden] {
+  display: none;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .spinner {
+    animation: none;
+  }
+}
