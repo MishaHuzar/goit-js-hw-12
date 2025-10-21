@@ -222,3 +222,9 @@ form button {
   font-weight: 400 !important;
   /* якщо треба жирніше */
 }
+
+.is-hidden {
+  display: none !important;
+  visibility: hidden;
+  opacity: 0;
+}

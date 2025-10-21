@@ -20,6 +20,9 @@ let currentQuery = '';
 let page = 1;
 let totalHits = 0;
 
+hideLoadMoreButton();
+hideLoader();
+
 form.addEventListener('submit', async event => {
   event.preventDefault();
   clearGallery();
