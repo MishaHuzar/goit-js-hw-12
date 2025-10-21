@@ -4,13 +4,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>goit-js-hw-11</title>
+  <title>goit-js-hw-12</title>
   <link rel="stylesheet" href="./css/styles.css" />
 </head>
 
 <body>
-  <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
-
   <main>
     <form class="form">
       <label>
@@ -19,13 +17,12 @@
       </label>
     </form>
 
-    <div class="loading" hidden>Load images, please wait...</div>
-
-    <button id="searchBtn" hidden>
-      <span class="loader" id="btnSpinner" hidden></span>
-    </button>
-
     <ul class="gallery"></ul>
+
+    <div class="controls">
+      <button class="load-more is-hidden">Load more</button>
+      <div class="loading is-hidden">Loading images...</div>
+    </div>
   </main>
 
   <script type="module" src="./main.js"></script>

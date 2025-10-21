@@ -27,11 +27,11 @@
   "main": "vite.config.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MishaHuzar/goit-js-hw-12.git"
+    "url": "git+https://github.com/MishaHuzar/goit-js-hw-11.git"
   },
   "keywords": [],
   "bugs": {
-    "url": "https://github.com/MishaHuzar/goit-js-hw-12/issues"
+    "url": "https://github.com/MishaHuzar/goit-js-hw-11/issues"
   },
-  "homepage": "https://github.com/MishaHuzar/goit-js-hw-12#readme"
+  "homepage": "https://github.com/MishaHuzar/goit-js-hw-11#readme"
 }
