@@ -2,7 +2,7 @@ import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
 export const gallery = document.querySelector('.gallery');
-export const loader = document.querySelector('.loading');
+export const loader = document.querySelector('.loader');
 export const loadMoreBtn = document.querySelector('.load-more');
 
 const lightbox = new SimpleLightbox('.gallery a', {
